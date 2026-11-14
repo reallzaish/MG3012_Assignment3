@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MessageBoard DApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>MessageBoard</h1>
+        <p>A Decentralized Message Board</p>
+
+        <button id="connectWallet">Connect Wallet</button>
+        <p id="account">Wallet not connected</p>
+
+        <div class="card">
+            <h2>Current Message</h2>
+            <p id="message">Loading message...</p>
+
+            <input type="text" id="newMessage"
+                   placeholder="Enter a new message">
+
+            <button id="updateMessage">Update Message</button>
+        </div>
+
+        <div class="card">
+            <h2>Contract Information</h2>
+            <p>Update Count: <span id="updateCount">-</span></p>
+            <p>Last Updated By: <span id="lastUpdatedBy">-</span></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.4/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
